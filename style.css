@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   
+
+  * {
+    /* Reset default margin, padding, and list styles for all elements */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    list-style: none; /* Remove default bullet points from lists */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.main {
+    /* Flex container for main content, arranged in a column with gaps */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.row {
+    /* Flex container for row items, centered with space between them */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    /* Flex container for the overall layout with auto margin */
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px); /* Full width minus padding */
+    margin: auto;
+}
+
+header {
+    /* Header styles with background and shadow */
+    background: #FFF;
+    box-shadow: 0px 1.6px 8.2px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    text-transform: capitalize; /* Capitalizes text */
+}
+
+nav ul {
+    /* Flex container for navigation items with wrapping and spacing */
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+}
+
+nav li {
+    /* Font family for nav list items */
+    font-family: Poppins;
+}
+
+nav a {
+    /* Link styles with color and bold font */
+    color: #101928;
+    position: relative;
+    font-family: Inter;
+    font-weight: bolder;
+}
+
+.logo h2 {
+    /* Logo text styles with color and shadow */
+    font-family: Poppins;
+    color: #2b16b3;
+    letter-spacing: 3px;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.10);
+}
+
+.section1 {
+    /* Flex container for section 1, arranged vertically */
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 img {
+    /* Image styles for section 1 */
+    width: 450px;
+    height: 450px;
+    border-radius: 50%; /* Circular images */
+}
+
+p {
+    /* Paragraph styles with font and color */
+    font-family: Poppins;
+    color: #2b16b3;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.section2 h2 {
+    /* Font family for section 2 heading */
+    font-family: Inter;
+}
+
+.section2 {
+    /* Flex container for section 2, centered */
+    display: flex;
+    align-items: center;
+}
+
+.hobbies img {
+    /* Image styles for hobbies section */
+    width: 230px;
+    height: 230px;
+    padding: 20px;
+}
+
+.hobbies {
+    /* Flex container for hobbies, centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.hobbies-img {
+    /* Flex container for hobbies images */
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.section3 {
+    /* Flex container for section 3, vertically centered */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.section3 h2 {
+    /* Font weight for section 3 heading */
+    font-weight: 600;
+    font-family: Inter;
+}
+
+.section3 label {
+    /* Font weight for labels in section 3 */
+    font-weight: 600;
+    font-family: Inter;
+}
+
+.section3 .input {
+    /* Input field styles */
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+}
+
+.submit {
+    /* Submit button styles */
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+    border-radius: 24px 54px 22px; /* Rounded corners */
+    background-color: rgb(12, 12, 232); /* Button background color */
+    border: none;
+    font-family: Inter;
+}
+
+.section3 p {
+    /* Paragraph styles in section 3 */
+    color: #101928;
+    letter-spacing: 0.5px;
+    width: 50%; /* Width for paragraph */
+}
+
+
+/*  ملاحظة عشان الحلال والحرام   كتبت الكود واعطيته لشات جي بي تي يحطلي الكومنت عالاكواد -_-*/
